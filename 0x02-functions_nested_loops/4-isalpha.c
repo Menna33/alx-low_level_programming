@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * isalpha - checks for alphabetic character
+ * _isalpha - checks for alphabetic character
  * @c: character to be verified
  * Return: 0 or 1
  * .
