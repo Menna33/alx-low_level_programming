@@ -15,7 +15,7 @@ if (i % 10 == i)
 {
 _putchar('0');
 }
-_putchar('i');
+_putchar(i);
 _putchar(':');
 for (j = 0; j < 60; j++)
 {
@@ -23,7 +23,7 @@ if (j % 10 == j)
 {
 _putchar('0');
 }
-_putchar('j');
+_putchar(j);
 }
 _putchar('\n');
 }
