@@ -18,7 +18,8 @@ for (j = 0; j < 60; j++)
 {
 _putchar((j / 10)+'0');
 _putchar((j % 10)+'0');
-}
 _putchar('\n');
+}
+
 }
 }
