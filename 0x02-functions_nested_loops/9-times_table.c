@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * add - adds 2 integers
+ * times_table - prints the time tables of the numbers
  *
- * Return: the sum of 2
+ * Return: nothing
  */
- 
-int add (int a, int b)
+void times_table(void)
 {
 int i;
 int j;
