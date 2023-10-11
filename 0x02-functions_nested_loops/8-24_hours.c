@@ -11,19 +11,13 @@ int i;
 int j;
 for (i = 0; i < 24; i++)
 {
-if (i % 10 == i)
-{
-_putchar('0');
-}
-_putchar(i);
+_putchar((i / 10)+'0');
+_putchar((i % 10)+'0');
 _putchar(':');
 for (j = 0; j < 60; j++)
 {
-if (j % 10 == j)
-{
-_putchar('0');
-}
-_putchar(j);
+putchar((j / 10)+'0');
+putchar((j % 10)+'0');
 }
 _putchar('\n');
 }
