@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - prints numbers in special way
- * Return: 0 always success
+ * Return: Always 0  success
  */
 int main(void)
 {
@@ -21,6 +21,6 @@ printf("%d", i);
 if (i != 100)
 printf(" ");
 }
-_putchar('/n');
+_putchar('\n');
 return (0);
 }
