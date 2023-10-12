@@ -6,10 +6,12 @@
  */
 int main(void)
 {
-int i, j;
+int i;
 
 for (i = 0; i < 100; i++)
 {
+if (i % 3 == 0 && i % 5 == 0)
+printf("%s", "FizzBuzz");
 if (i % 3 == 0)
 printf("%s", "Fizz");
 else if (i % 5 == 0)
