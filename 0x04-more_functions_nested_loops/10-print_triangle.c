@@ -15,10 +15,12 @@ k = 0;
 while (k < size - j)
 {
 _putchar(' ');
+k++;
 }
 while (j > 0)
 {
 _putchar('#');
+j--;
 }
 _putchar('\n');
 }
