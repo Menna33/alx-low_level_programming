@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * main - prints numbers in special way
  * Return: Always 0  success
@@ -21,6 +22,6 @@ printf("%d", i);
 if (i != 100)
 printf(" ");
 }
-_putchar('\n');
+printf("\n");
 return (0);
 }
