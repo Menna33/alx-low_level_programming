@@ -15,7 +15,7 @@ while (s[length] != '\0')
 {
 length++;
 }
-for (i = 0; i < length; i++)
+for (i = 0; i < length / 2; i++)
 {
 tmp = s[i];
 s[i] = s[length-i-1];
