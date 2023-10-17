@@ -17,10 +17,8 @@ length++;
 }
 for (i = 0; i < length; i++)
 {
-tmp[length - i - 1] = s[i];
-}
-for (i = 0; i < length; i++)
-{
-s[i] = tmp[i];
+tmp = s[i];
+s[i] = s[length-i-1];
+s[length-i-1] = tmp;
 }
 }
