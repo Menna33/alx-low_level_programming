@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * _strncpy - copies one string to another
+ * @dest: argument string
+ * @src: argument string to be copied
+ * @n: number of characters to be concatinated
+ * Return: concatenated string
+ */
+
+char *_strncpy(char *dest, char *src, int n)
+{
+int i = 0;
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+while (i < n)
+{
+dest[i] = '\0';
+}
+return (dest);
+}
