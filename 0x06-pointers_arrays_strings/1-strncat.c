@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: argument string
  * @src: argument string
+ * @n: number of characters to be concatinated
  * Return: concatenated string
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int i = 0;
 int dest_length = 0;
@@ -15,7 +16,7 @@ while (dest[i] != '\0')
 {
 dest_length++;
 }
-while (src[i] != '\0')
+while (i < n)
 {
 dest[dest_length - 1 + i] = src[i];
 i++;
