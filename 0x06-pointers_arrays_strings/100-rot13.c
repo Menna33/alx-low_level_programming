@@ -19,5 +19,6 @@ if (s[j] == input_letters[i])
 s[j] = output_letters[i];
 }
 }
+s[j] = '\0';
 return (s);
 }
