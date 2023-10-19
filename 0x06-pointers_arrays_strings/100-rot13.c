@@ -16,7 +16,10 @@ for (j = 0; s[j] != '\0'; j++)
 for (i = 0; i < 26; i++)
 {
 if (s[j] == input_letters[i])
+{
 s[j] = output_letters[i];
+break;
+}
 }
 }
 s[j] = '\0';
