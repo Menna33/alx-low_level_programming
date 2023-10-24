@@ -5,13 +5,14 @@
  * _strspn - returns the number of bytes in the initial segment
  * @s: first string
  * @accept: second string
- * Return: number of bytes
+ * Return: number of bytes in the initial segment of s which consist only of
+ * bytes from accept
  */
 
 unsigned int _strspn(char *s, char *accept)
 
 {
-int i = 0, j = 0, count = 0;
+unsigned int i = 0, j = 0, count = 0;
 while (s[i] != '\0')
 {
 while (accept[j] != '\0')

@@ -5,13 +5,14 @@
  * _strpbrk - locates the first occurrence in the string
  * @s: first string
  * @accept: second string
- * Return: a pointer, or NULL
+  * Return: Returns a pointer to the byte in s that matches one of the bytes in
+ * accept, or NULL if no such byte is found
  */
 
 char *_strpbrk(char *s, char *accept)
 
 {
-int i = 0, j = 0;
+unsigned int i = 0, j = 0;
 while (s[i] != '\0')
 {
 while (accept[j] != '\0')
