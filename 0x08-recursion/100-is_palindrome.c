@@ -13,7 +13,7 @@ int length(char *s)
 {
 if (*s == '\0')
 return (0);
-return (1 + lenght (s + 1));
+return (1 + length (s + 1));
 }
 
 /**
