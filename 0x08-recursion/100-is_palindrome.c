@@ -11,12 +11,9 @@
 
 int length(char *s)
 {
-int i = 0;
-while (s[i] != '\0')
-{
-i++;
-}
-return (i);
+if (*s == '\0')
+return (0);
+return (1 + lenght (s + 1));
 }
 
 /**
