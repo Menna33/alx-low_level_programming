@@ -17,7 +17,7 @@ for (j = 0; j < 8; j++)
 {
 for (i = 0; a[i] != '\0'; i++)
 {
-_putchar(a[i]);
+_putchar(a[i][j]);
 }
 _putchar('\n');
 }
