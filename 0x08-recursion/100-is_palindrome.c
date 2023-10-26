@@ -1,5 +1,5 @@
+#include <stdio.h>
 
-#include "main.h"
 
 /**
  * length - calculate the length of string
@@ -25,14 +25,17 @@ return (1 + length(s + 1));
  * Return:  1 or 0
  */
 
-int check(char *s, int length)
+int check(char *s, int length, int index)
 
 {
-if (*s == '\0')
+if (length <= 0)
 return (1);
-if (*s != *(s + length))
+if (s[index] != s[length - 1])
+{
+printf("%d length : ", length);
 return (0);
-return (check((s + 1), (length - 1)));
+}
+return (check(s, (length - 1), (index + 1)));
 }
 
 /**
@@ -46,5 +49,5 @@ return (check((s + 1), (length - 1)));
 int is_palindrome(char *s)
 
 {
-return (check(s, length(s)));
+return (check(s, length(s), 0));
 }
