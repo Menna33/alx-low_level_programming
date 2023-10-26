@@ -15,7 +15,7 @@ if (n % i == 0)
 return 0;
 else if (i >= n)
 return 1;
-is_prime(n, i + 1);
+return (is_prime(n, i + 1));
 }
 
 
