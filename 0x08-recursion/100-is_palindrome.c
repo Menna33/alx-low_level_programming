@@ -32,7 +32,6 @@ if (length <= 0)
 return (1);
 if (s[index] != s[length - 1])
 {
-printf("%d length : ", length);
 return (0);
 }
 return (check(s, (length - 1), (index + 1)));
