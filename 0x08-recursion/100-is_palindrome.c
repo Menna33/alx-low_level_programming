@@ -30,7 +30,7 @@ int check(char *s, int length)
 {
 if (*s == '\0')
 return (1);
-if (*s != *(s + length - 1))
+if (*s != *(s + length))
 return (0);
 return (check((s + 1), (length - 1)));
 }
