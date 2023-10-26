@@ -21,7 +21,7 @@ return (1 + length(s + 1));
  *
  * @s: string to check if it is palindrome or not
  * @length: length of the string
- *
+ * @index: to access the string characters
  * Return:  1 or 0
  */
 
