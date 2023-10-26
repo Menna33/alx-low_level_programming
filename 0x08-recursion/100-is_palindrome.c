@@ -13,11 +13,30 @@ int length(char *s)
 {
 if (*s == '\0')
 return (0);
-return (1 + length (s + 1));
+return (1 + length(s + 1));
 }
 
 /**
- * is_palindrome - calculate the  value of x raised to the power of y
+ * check - check if string s is palindrome
+ *
+ * @s: string to check if it is palindrome or not
+ * @length: length of the string
+ *
+ * Return:  1 or 0
+ */
+
+int check(char *s, int length)
+
+{
+if (*s == '\0')
+return (1);
+if (*s != *(s + length - 1))
+return (0);
+return (check((s + 1), (length - 1)));
+}
+
+/**
+ * is_palindrome - check if string s is palindrome
  *
  * @s: string to check if it is palindrome or not
  *
@@ -27,9 +46,5 @@ return (1 + length (s + 1));
 int is_palindrome(char *s)
 
 {
-if (*s == '\0')
-return (1);
-if (*s != *(s + length(s) - 1))
-return (0);
-return (is_palindrome(s + 1));
+return (check(s, length(s)));
 }
