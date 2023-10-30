@@ -7,7 +7,7 @@
  * @argc: number of elements of array argv
  * @argv: array of arguments
  *
- * Return: 0
+ * Return: 0 (success) or 1 (Failure)
  */
 
 int main(int argc, char **argv)
