@@ -20,7 +20,7 @@ if (arr == NULL)
 return (NULL);
 while (i < size)
 {
-arr[i] = c;
+*(arr + i) = c;
 i++;
 }
 
