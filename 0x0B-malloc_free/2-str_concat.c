@@ -28,14 +28,14 @@ if (new_string == NULL)
 return (NULL);
 while (i < len1)
 {
-*(new_string + i) = *(s1 + i);
+new_string[i] = s1[i];
 i++;
 }
 while (j < len2)
 {
-*(new_string + i + j) = *(s2 + j);
+new_string[i + j] = s2[j];
 j++;
 }
-*(new_string + i + j) = '\0';
+new_string[i + j] = '\0';
 return (new_string);
 }
