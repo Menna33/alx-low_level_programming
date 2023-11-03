@@ -15,7 +15,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s3;
 int size2;
-if(n >= strlen(s2))
+int index = 0, i = 0;
+if (n >= strlen(s2))
 size2 = strlen(s2);
 else
 size2 = n;
@@ -26,8 +27,6 @@ s2 = "";
 s3 = malloc(sizeof(char) * (strlen(s1) + size2));
 if (s3 == NULL)
 return (NULL);
-int index = 0, i = 0;
-
 while (s1[index] != '\0')
 {
 s3[index] = s1[index];
