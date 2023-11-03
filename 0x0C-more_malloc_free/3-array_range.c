@@ -20,7 +20,7 @@ arr = malloc(sizeof(int) * (max - min));
 if (arr == NULL)
 return (NULL);
 
-for (i = 0; i < (max - min) + 1; i++)
+for (i = 0; i < (max - min); i++)
 {
 arr[i] = min + i;
 }
