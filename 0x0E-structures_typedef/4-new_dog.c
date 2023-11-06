@@ -16,13 +16,13 @@ dog_t *new_one;
 new_one = malloc(sizeof(dog_t));
 if (new_one == NULL)
 return (NULL);
-new_one->name = malloc(sizeof(char) * strlen(name));
+new_one->name = malloc(sizeof(char) * strlen(name) + 1);
 if (new_one->name == NULL)
 {
 free(new_one);
 return (NULL);
 }
-new_one->owner = malloc(sizeof(char) * strlen(owner));
+new_one->owner = malloc(sizeof(char) * strlen(owner) + 1);
 if (new_one->owner == NULL)
 {
 free(new_one->name);
