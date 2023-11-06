@@ -1,5 +1,5 @@
 /**
- * struct Dog - defination of the dog
+ * struct dog - defination of the dog
  * @name: dog's name
  * @age: dog's age
  * @owner: the owner name
@@ -8,9 +8,10 @@
  *  dog to know all information about it
  */
 
-struct Dog
+struct dog
 {
 char * name; 
 float age;
 char * owner;
 };
+void init_dog(struct dog *d, char *name, float age, char *owner);
