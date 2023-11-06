@@ -7,12 +7,13 @@
  * @age: dog's age
  * @owner: the owner name
  *
- * Return : object of the dog or NULL
+ * Return : new_one or NULL
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *new_one = malloc(sizeof(dog_t));
+dog_t *new_one;
+new_one = malloc(sizeof(dog_t));
 if (new_one == NULL)
 return (NULL);
 new_one->name = name;
