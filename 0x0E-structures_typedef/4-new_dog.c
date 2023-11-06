@@ -21,8 +21,7 @@ free(owner);
 free(new_one);
 return (NULL);
 }
-new_one->name = name;
-new_one->age = age;
+
 if (owner == NULL)
 {
 free(name);
@@ -30,5 +29,7 @@ free(new_one);
 return (NULL);
 }
 new_one->owner = owner;
+new_one->name = name;
+new_one->age = age;
 return (new_one);
 }
