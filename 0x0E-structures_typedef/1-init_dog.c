@@ -3,6 +3,7 @@
 
 /**
  * init_dog - intialize values of the dog
+ * @d: dog object
  * @name: dog's name
  * @age: dog's age
  * @owner: the owner name
