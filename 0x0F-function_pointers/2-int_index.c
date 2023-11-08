@@ -7,7 +7,8 @@
  * @array: the array to executes the function on its elements
  * @size: the size of the array
  * @cmp: function to compare 2 integers
- * Return : index of the element or -1
+ * Return : index of the element when found
+ * or -1 when size is <=0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
