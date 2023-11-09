@@ -4,10 +4,9 @@
 #include "calc.h"
 
 /**
- * print_name - prints the name
- * @name: the name to be printed
- * @f : function to print the name
- * Return : void
+ * get_op_func - gets the type of operation
+ * @s: operation
+ * Return : type of operation
  */
 int (*get_op_func(char *s))(int, int)
 {
