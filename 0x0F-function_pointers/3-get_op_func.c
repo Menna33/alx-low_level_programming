@@ -21,7 +21,9 @@ op_t ops[] = {
 int i = 0;
 while (i < 6)
 {
-if (s == ops[i].f)
-return (ops[i].f);
+if  (strcmp(s, ops[i].op) == 0)
+return (*(ops[i]).f);
+i++;
 }
+return (NULL);
 }

@@ -39,4 +39,6 @@ num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 op = get_op_func(argv[2]);
 result = op(num1, num2);
+printf("%d\n", result);
+return (0);
 }
