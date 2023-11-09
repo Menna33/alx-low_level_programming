@@ -18,6 +18,7 @@ printf("%d", va_arg(ptr, int));
 if (separator != NULL)
 printf("%s", separator);
 }
+if (ptr != NULL)
 printf("%d", va_arg(ptr, int));
 printf("\n");
 va_end(ptr);
