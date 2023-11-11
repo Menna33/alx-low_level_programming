@@ -18,7 +18,7 @@ printf("%d", va_arg(ptr, int));
 if (separator != NULL)
 printf("%s", separator);
 }
-if (ptr != NULL)
+if (ptr != NULL && n != 0)
 printf("%d", va_arg(ptr, int));
 printf("\n");
 va_end(ptr);
