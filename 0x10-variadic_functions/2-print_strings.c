@@ -14,10 +14,7 @@ va_list ptr;
 va_start(ptr, n);
 for (i = 0; i < n - 1; i++)
 {
-if (va_arg(ptr, char *) != NULL)
 printf("%s", va_arg(ptr, char *));
-else
-printf("%s", "(nil)");
 if (separator != NULL)
 printf("%s", separator);
 }
