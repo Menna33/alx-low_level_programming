@@ -17,5 +17,5 @@ new->str = strdup(str);
 new->len = sizeof(str);
 new->next = *head;
 *head = new;
-return (new);
+return (*head);
 }
