@@ -2,8 +2,7 @@
 /**
  * print_list - prints list's data
  * @h: the list
- *
- * Description: singly linked list node structure
+ * return: the size of the list
  */
 size_t print_list(const list_t *h)
 {
@@ -13,7 +12,7 @@ while (h)
 if (h->str == NULL)
 printf("[0] (nil)\n");
 else
-printf ("[%d] %s\n",h->len,h->str);
+printf("[%d] %s\n", h->len, h->str);
 h = h->next;
 count++;
 }
