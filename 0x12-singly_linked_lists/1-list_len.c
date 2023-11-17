@@ -2,7 +2,7 @@
 /**
  * list_len - prints list's length
  * @h: the list
- * return: the size of the list
+ * Return: integer the size of the list
  */
 size_t list_len(const list_t *h)
 {
