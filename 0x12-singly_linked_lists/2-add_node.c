@@ -3,7 +3,7 @@
  * add_node - adds a new node at the beginning of a list_t list.
  * @head: the first node in the list
  * @str: the data of the node
- * return: the address of the new element, or NULL if it failed
+ * Return: integer the address of the new element, or NULL if it failed
  */
 list_t *add_node(list_t **head, const char *str)
 {
