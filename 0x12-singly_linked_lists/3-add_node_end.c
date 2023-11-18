@@ -14,7 +14,7 @@ if (new == NULL)
 return (NULL);
 }
 new->str = strdup(str);
-new->len = sizeof(str);
+new->len = strlen(str);
 new->next = NULL;
 if (*head == NULL)
 {

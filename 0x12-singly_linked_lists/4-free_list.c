@@ -6,8 +6,10 @@
  */
 void free_list(list_t *head)
 {
+list_t *tmp;
 if (head == NULL)
 return;
-free_list(head->next);
+tmp = head->next;
 free(head);
+head = tmp;
 }
