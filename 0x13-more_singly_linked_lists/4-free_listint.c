@@ -12,7 +12,6 @@ while (head)
 tmp = head;
 head = tmp->next;
 free(tmp);
-
 }
 
 }
