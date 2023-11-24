@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * binary_to_uint - check the code
- *
- * Return: Always 0.
+ * binary_to_uint - converts binary number to decimal
+ * @b:binary number to get its decimal
+ * Return: decimal represntation of binary number.
  */
 unsigned int binary_to_uint(const char *b)
 {
